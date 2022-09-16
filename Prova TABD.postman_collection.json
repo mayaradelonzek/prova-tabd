@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "688b3dd4-9416-40ab-83ce-f1c2b71ae94f",
+		"name": "Prova TABD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get video",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/youtube",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"youtube"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add video",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \n    \"title\": \"Video 5\", \n    \"time\": \"00:03:40\", \n    \"user\": \"may\", \n    \"seguidores\": 100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/youtube",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"youtube"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete video",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/youtube/632508f3170d2dbf018281ff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"youtube",
+						"632508f3170d2dbf018281ff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update video",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \n    \"title\": \"Video 5\", \n    \"time\": \"00:03:40\", \n    \"user\": \"mayara\", \n    \"seguidores\": 100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/youtube/632508f3170d2dbf018281ff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"youtube",
+						"632508f3170d2dbf018281ff"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
